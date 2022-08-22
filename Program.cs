@@ -72,32 +72,31 @@
 //[3 7 22 2 78] -> 76
 //  В задаче задается массив целых чисел!
 
-int[] CreateRandomArray(int N, int start, int end) // Генерация случайного массива
-{
-    int[] RandomArray = new int[N];
-    for (int i = 0; i < N; i++)
-    {
-        RandomArray[i] = new Random().Next(start, end + 1);
-    }
-    return RandomArray;
-}
-void ShowArray(int[] array) //Вывод МАССИВА! на экран.
-{
-    for (int i = 0; i < array.Length; i++)
-    {
-        Console.Write(array[i] + " ");
-    }
-    Console.WriteLine();
-}
-Console.Clear();
-int[] massarray = CreateRandomArray(10, -100, 100); // Обращение к методу вывода на экран случайного массива
-ShowArray(massarray);
-int min = 0;
-int max = 0;
-for (int i = 0; i < massarray.Length; i ++)
-{
-    if (massarray[i]<min) min=massarray[i];
-    else if(massarray[i]>max) max=massarray[i];
-    
- }
-Console.WriteLine($"Максимум {max}, Минимум {min}. Разница между максимальным и минимальным значениями = {max-min}");
+// int[] CreateRandomArray(int N, int start, int end) // Генерация случайного массива
+// {
+//     int[] RandomArray = new int[N];
+//     for (int i = 0; i < N; i++)
+//     {
+//         RandomArray[i] = new Random().Next(start, end + 1);
+//     }
+//     return RandomArray;
+// }
+// void ShowArray(int[] array) //Вывод МАССИВА! на экран.
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write(array[i] + " ");
+//     }
+//     Console.WriteLine();
+// }
+// Console.Clear();
+// int[] massarray = CreateRandomArray(10, -100, 100); // Обращение к методу вывода на экран случайного массива
+// ShowArray(massarray);
+// int min = 0;
+// int max = 0;
+// for (int i = 0; i < massarray.Length; i ++)
+// {
+//     if (massarray[i]<min) min=massarray[i];
+//     else if(massarray[i]>max) max=massarray[i];
+//  }
+// Console.WriteLine($"Максимум {max}, Минимум {min}. Разница между максимальным и минимальным значениями = {max-min}");
