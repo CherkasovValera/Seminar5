@@ -100,4 +100,4 @@ for (int i = 0; i < massarray.Length; i ++)
     else if(massarray[i]>max) max=massarray[i];
     
  }
-Console.WriteLine($"Разница между максимальным и минимальным значениями = {max-min}");
+Console.WriteLine($"Максимум {max}, Минимум {min}. Разница между максимальным и минимальным значениями = {max-min}");
